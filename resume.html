@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator - Career Connect</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: paleturquoise;
+        }
+
+        .resume-form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+        
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .generate-button {
+            background-color:rgb(14, 215, 81);
+            color: black;
+            font-size: large;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }    
+
+        .generate-button:hover {
+            background-color: white;
+        }
+           
+        .form-check-label {
+            font-weight: normal;
+            color: black;
+        }
+        .form-label {
+        color:#090909;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="resume-form">
+                    <h2 class="text-center mb-4" style="font-family:impact; color:#ec0909;">RESUME</h2>
+                    <form class="registration-form" action="http://localhost:8000/resume" method="post" >
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="dob">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Gender</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="gender" id="male" value="Male">
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="gender" id="female" value="Female">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="gender" id="otherGender" value="Other">
+                                <label class="form-check-label" for="otherGender">Other</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email"required>
+                                <div class="input-group-append">
+                                    <span class="input-group-text">@example.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" name="phone" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="education">Education</label>
+                            <select class="form-control" name="education" id="education">
+                                <option value="" disabled selected>Select your education level</option>
+                                <option value="High School">High School</option>
+                                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                                <option value="Master's Degree">Master's Degree</option>
+                                <option value="PhD">PhD</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="experience">Experience</label>
+                            <select class="form-control" name="experience" id="experience" required>
+                                <option value="" disabled selected>Select years of experience</option>
+                                <option value="Less than 1 year">Less than 1 year</option>
+                                <option value="1-3 years">1-3 years</option>
+                                <option value="3-5 years">3-5 years</option>
+                                <option value="5+ years">5+ years</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="skills">Select a Skill:</label>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="skills" id="javascript" value="JavaScript">
+                                <label class="form-check-label" for="javascript">JavaScript</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="skills" id="html" value="HTML">
+                                <label class="form-check-label" for="html">HTML</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="skills" id="css" value="CSS">
+                                <label class="form-check-label" for="css">CSS</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="skills" id="python" value="Python">
+                                <label class="form-check-label" for="python">Python</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="text" class="form-check-input" name="skills" id="skills"placeholder="Other">
+                                <label class="form-label">Other</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Select Programming Language:</label>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="language" id="java" value="Java">
+                                <label class="form-check-label" for="java">Java</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="language" id="python" value="Python">
+                                <label class="form-check-label" for="python">Python</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="language" id="javascript" value="JavaScript">
+                                <label class="form-check-label" for="javascript">JavaScript</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="text" class="form-check-input" name="skills" id="skills"placeholder="Other">
+                                <label class="form-label">Other</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="type">Select Employment Type:</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="work" id="fullTime" value="Full Time">
+                                <label class="form-check-label" for="fullTime">Full Time</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="work" id="partTime" value="Part Time">
+                                <label class="form-check-label" for="partTime">Part Time</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="work" id="freelance" value="Freelance">
+                                <label class="form-check-label" for="freelance">Freelance</label>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="generate-button"style="font-family:Comic Sans MS;">Sumbit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

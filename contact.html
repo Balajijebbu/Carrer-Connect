@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Career Connect</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+          background-image: linear-gradient(rgb(80, 117, 176), rgb(190, 143, 85), rgb(204, 106, 226));
+
+        }
+
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .fa:hover {
+            text-decoration: none; 
+        }
+        .navbar {
+            margin-bottom: 30px;
+            background-color: #343a40;
+        }.navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .contact-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .form-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-heading {
+            font-family: 'Comic Sans MS', sans-serif;
+            font-size: 28px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .navbar-brand {
+            
+            font-weight: bold;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body data-spy="scroll" data-target="#navbarNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Carrer Connect</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="privacy.html">Privacy policy</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions or inquiries, please don't hesitate to get in touch with us. We're here to help!</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Email:</strong> jeyabalaji9789@gmail.com</li>
+                        <li><strong>Phone:</strong> +91 9789099336</li>
+                    </ul>
+                    <br>
+                    <h2>Office Address</h2>
+                    <address>
+                        MGR Nagar-2nd Street<br>
+                        Chennai, Tamilnadu<br>
+                        India.
+                    </address>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-container">
+                    <h2 class="form-heading">Send us a message</h2>
+                    <form class="registration-form" action="http://localhost:7000/sign_up" method="post" >
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message"rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br><br><br><br>
+    <footer class="footer text-center"style="font-family:Comic Sans MS;">
+        <div class="container">
+            <p>&copy; 2023 CarrerConnect. All rights reserved.</p>
+            
+    
+        <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/Balaji_jebbu" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/jeya-balaji-800397259/" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/balaji_jebbu/" class="fa fa-instagram"></a>
+      
+    </footer>
+</body>
+</html>

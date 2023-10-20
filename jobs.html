@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Finder - Jobs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .job-listing {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .job-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .job-company {
+            color: #00ffa6;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .job-description {
+            margin-bottom: 15px;
+        }
+
+        .job-apply {
+            text-align: right;
+        }
+
+        .apply-button {
+            background-color: #06a35f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .apply-button:hover {
+            background-color: #a400b3;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Carrer Connect</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="jobs.html">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mt-5">
+        <h2 class="text-center mb-4" style="font-family:Comic Sans MS;color:black;">Job Listings</h2>
+        <div class="job-listing">
+            <h3 class="job-title"style="font-family:Comic Sans MS">Frontend Developer</h3>
+            <p class="job-company">Tech Solutions Inc.</p>
+            <p class="job-description">We're seeking a talented frontend developer to join our team and create responsive and interactive web applications.</p>
+            <div class="job-apply">
+                <a href="front.html"> 
+                    <button class="apply-button">Apply Now</button>
+                </a>
+            </div>
+        </div>
+        <div class="job-listing">
+            <h3 class="job-title"style="font-family:Comic Sans MS">Data Analyst</h3>
+            <p class="job-company">Data Insights Corp.</p>
+            <p class="job-description">Join our analytics team to analyze data, generate insights, and drive data-driven decisions.</p>
+            <div class="job-apply">
+                <a href="dataanalyst.html"> 
+                    <button class="apply-button">Apply Now</button>
+                </a>
+            </div>
+        </div>
+        <div class="job-listing">
+            <h3 class="job-title"style="font-family:Comic Sans MS">Full Stack Developer</h3>
+            <p class="job-company">Tech Innovators Ltd.</p>
+            <p class="job-description">Seeking a full stack developer with expertise in both frontend and backend technologies.</p>
+            <div class="job-apply">
+                <a href="fullstack.html"> 
+                    <button class="apply-button">Apply Now</button>
+                </a>
+            </div>
+        </div>
+        <div class="job-listing">
+            <h3 class="job-title"style="font-family:Comic Sans MS">Digital Marketing Specialist</h3>
+            <p class="job-company">Digital Strategies Co.</p>
+            <p class="job-description">Join our marketing team to develop and implement digital marketing strategies.</p>
+            <div class="job-apply">
+                <a href="digital.html"> 
+                    <button class="apply-button">Apply Now</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="bg-dark text-white text-center py-3"style="font-family:Comic Sans MS;">
+        <p>&copy; 2023 CarrerConnect. All rights reserved.</p>
+    </footer>
+</body>
+</html>

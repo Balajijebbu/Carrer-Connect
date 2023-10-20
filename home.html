@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        
+body {
+
+    font-family: Arial, sans-serif;
+}
+img:hover {
+  opacity: 0.8;
+}
+.navbar {
+    margin-bottom: 30px;
+}
+.navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+.jumbotron {
+    background-image: url('14.jpg');
+    background-size: cover;
+    color: white;
+    padding: 100px;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    
+    transform: translateY(-5px);
+}
+.services {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .service {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .service-icon {
+            font-size: 48px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .counter {
+            font-size: 36px;
+            color: #007bff;
+        }
+
+        .testimonials {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .testimonial {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .navbar-brand {
+            
+            font-weight: bold;
+            color: #fff;
+        }
+
+footer {
+    color: white;
+}
+
+    </style>
+
+</head>
+<body data-spy="scroll" data-target="#navbarNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Carrer Connect</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="privacy.html">Privacy policy</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="jumbotron text-center">
+        <h1 class="display-4" style="font-family:Comic Sans MS;">Find Your Dream Job</h1>
+        <p class="lead"style="font-family:Comic Sans MS;color: white-space: inherit;;">Search and apply for the latest job opportunities</p>
+        <a href="login.html" class="btn btn-success btn-lg">Login</a>
+        <a href="signup.html" class="btn btn-success btn-lg">Signup</a>
+    </header>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="text-center mb-4"style="font-family:Comic Sans MS;">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 service">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h4>Job Search</h4>
+                    <p>Find the latest job opportunities in your field.</p>
+                </div>
+                <div class="col-md-4 service">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h4>Job Application</h4>
+                    <p>Apply for jobs seamlessly with our user-friendly application process.</p>
+                </div>
+                <div class="col-md-4 service">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Network Building</h4>
+                    <p>Connect with professionals and expand your network.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container text-center counter">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="counter-item">
+                    <h2><span class="count">1000</span>+</h2>
+                    <p>Successful Placements</p>
+                    <img src="19.jpg" alt="Successful Placements">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="counter-item">
+                    <h2><span class="count">200</span>+</h2>
+                    <p>Companies</p>
+                    <img src="21.jpg" alt="Companies">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="counter-item">
+                    <h2><span class="count">5000</span>+</h2>
+                    <p>Happy Users</p>
+                    <img src="20.jpg" alt="Happy Users">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="text-center mb-4"style="font-family:Comic Sans MS;">What Our Users Say</h2>
+            <div class="row">
+                <div class="col-md-4 testimonial">
+                    <img src="16.jpg" alt="User 1">
+                    <p>"Job Finder helped me find the perfect job match quickly. Highly recommended!"</p>
+                    <p><strong>JEYA BALAJI</strong><br>Software Engineer</p>
+                </div>
+                <div class="col-md-4 testimonial">
+                    <img src="17.jpg" alt="User 2">
+                    <p>"The platform is user-friendly and offers a wide range of job opportunities."</p>
+                    <p><strong>DHANUSH</strong><br>Marketing Specialist</p>
+                </div>
+                <div class="col-md-4 testimonial">
+                    <img src="18.jpg" alt="User 3">
+                    <p>"I got my dream job through Job Finder. It's a game-changer for job seekers!"</p>
+                    <p><strong>NITHAN</strong><br>UX Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <footer class="bg-dark text-white text-center py-3"style="font-family:Comic Sans MS;">
+        <p>&copy; 2023 CarrerConnect. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
